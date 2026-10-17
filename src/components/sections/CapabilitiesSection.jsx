@@ -254,7 +254,7 @@ export default function CapabilitiesSection() {
     >
       <div className="mx-auto max-w-[1100px] px-5 md:px-8">
         {/* Section header row */}
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-12">
+        <div data-animate="fade-up" className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-12">
           <div>
             <p className="mb-2 text-[11px] font-semibold tracking-widest uppercase text-[#9ca3a0] font-[Inter]">
               Capabilities
@@ -271,7 +271,7 @@ export default function CapabilitiesSection() {
         {/* Two-column layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           {/* ─── Left: Feature card ─── */}
-          <div className="rounded-2xl border border-[#e5e7e2] bg-[#f8f9f6] p-7">
+          <div data-animate="fade-up" className="rounded-2xl border border-[#e5e7e2] bg-[#f8f9f6] p-7">
             {/* Tab strip */}
             <nav
               className="mb-7 flex flex-wrap gap-6 border-b border-[#e5e7e2] pb-4"
@@ -325,7 +325,7 @@ export default function CapabilitiesSection() {
               </div>
 
               {/* Numbered features */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 pt-6 border-t border-[#e5e7e2]">
+              <div data-stagger className="grid grid-cols-1 sm:grid-cols-3 gap-5 pt-6 border-t border-[#e5e7e2]">
                 {content.features.map((f) => (
                   <div key={f.number}>
                     <p className="text-[12px] font-semibold font-[Inter] text-[#9ca3a0] mb-1">
@@ -348,6 +348,7 @@ export default function CapabilitiesSection() {
               (Same nature scene as the hero section)
             */}
             <div
+              data-animate="zoom"
               className="absolute inset-0"
               style={{
                 backgroundImage: "url('/images/hero-nature.webp')",

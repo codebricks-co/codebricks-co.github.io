@@ -114,23 +114,23 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-1 flex-col items-center justify-start pt-[120px] pb-0 px-5">
+      <div data-hero-sequence className="relative z-10 flex flex-1 flex-col items-center justify-start pt-[120px] pb-0 px-5">
         {/* YC badge */}
         
 
         {/* Heading */}
-        <h1 className="mx-auto max-w-[750px] text-center font-serif text-[56px] sm:text-[64px] md:text-[72px] font-normal leading-[1.1] text-[#0a0a0a] tracking-tight">
+        <h1 data-animate="fade-up" data-delay="0" className="mx-auto max-w-[750px] text-center font-serif text-[56px] sm:text-[64px] md:text-[72px] font-normal leading-[1.1] text-[#0a0a0a] tracking-tight">
           We build the software your business runs on.
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-6 max-w-[460px] text-center font-[Inter] text-[16px] text-[#6b7270] leading-relaxed">
+        <p data-animate="fade-up" data-delay="100" className="mt-6 max-w-[460px] text-center font-[Inter] text-[16px] text-[#6b7270] leading-relaxed">
           Web apps, mobile apps, and online stores, designed, built, and
           deployed by one small team.
         </p>
 
         {/* CTA buttons */}
-        <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
+        <div data-animate="fade-up" data-delay="200" className="mt-8 flex flex-col sm:flex-row items-center gap-4">
           <Button href={PROJECT_MAILTO}>
             Start a project&nbsp;
             <ArrowIcon size={13} />
@@ -141,7 +141,7 @@ export default function HeroSection() {
         </div>
 
         {/* Dashboard card — floats below */}
-        <div className="mt-14 w-full max-w-[700px]">
+        <div data-animate="fade-up" data-delay="300" className="mt-14 w-full max-w-[700px]">
           <HeroDashboardCard />
         </div>
       </div>

@@ -26,14 +26,14 @@ export default function Button({
 
   if (href) {
     return (
-      <a href={href} className={cls} {...props}>
+      <a href={href} data-motion-interactive className={cls} {...props}>
         {children}
       </a>
     )
   }
 
   return (
-    <button onClick={onClick} className={cls} {...props}>
+    <button onClick={onClick} data-motion-interactive className={cls} {...props}>
       {children}
     </button>
   )

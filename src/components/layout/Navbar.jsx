@@ -40,6 +40,7 @@ export default function Navbar() {
   return (
     <>
       <header
+        data-motion-nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled ? 'bg-white/90 backdrop-blur-md shadow-[0_1px_0_#e5e7e2]' : ''
         }`}
@@ -51,6 +52,7 @@ export default function Navbar() {
           {/* Logo */}
           <a
             href="#overview"
+            data-motion-link
             className="flex items-center gap-2 text-[25px] font-bold text-[#0a0a0a] font-[Inter] select-none hover:opacity-75 transition-opacity"
             onClick={() => handleNav('overview', '#overview')}
             aria-label="CodeBricks home"
@@ -69,6 +71,7 @@ export default function Navbar() {
               return (
                 <button
                   key={link.id}
+                  data-motion-link
                   onClick={() => handleNav(link.id, link.href)}
                   className={`flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[13px] font-medium font-[Inter] transition-all duration-200 cursor-pointer ${
                     isActive
@@ -88,6 +91,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <a
               href={PROJECT_MAILTO}
+              data-motion-interactive
               className="hidden sm:inline-flex items-center rounded-full border border-[#0a0a0a] px-4 py-1.5 text-[13px] font-medium font-[Inter] text-[#0a0a0a] hover:bg-[#0a0a0a] hover:text-white transition-all duration-200"
             >
               Start Project
@@ -95,6 +99,7 @@ export default function Navbar() {
 
             {/* Mobile hamburger */}
             <button
+              data-motion-interactive
               className="md:hidden flex flex-col gap-1.5 p-1.5 rounded-lg hover:bg-[#f2f3f0] transition-colors"
               onClick={() => setMobileOpen((v) => !v)}
               aria-label="Toggle navigation menu"
@@ -139,6 +144,7 @@ export default function Navbar() {
             <div className="mt-2 pt-2 border-t border-[#e5e7e2]">
               <a
                 href={PROJECT_MAILTO}
+                data-motion-interactive
                 className="flex justify-center items-center rounded-xl px-4 py-3 text-[14px] font-medium font-[Inter] bg-[#0a0a0a] text-white"
               >
                 Start Project

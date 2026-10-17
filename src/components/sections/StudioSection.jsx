@@ -3,7 +3,7 @@ import { teamMembers, clientLogos } from '../../data/siteData'
 /** Individual team member card */
 function TeamCard({ member }) {
   return (
-    <article className="flex flex-col rounded-2xl border border-[#e5e7e2] bg-white p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
+    <article data-motion-card className="flex flex-col rounded-2xl border border-[#e5e7e2] bg-white p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
       {/* Avatar */}
       <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#eef2f8] border border-[#dce4ee]">
         <span className="text-[15px] font-semibold font-[Inter] text-[#3a3d3a] tracking-wide">
@@ -35,7 +35,7 @@ export default function StudioSection() {
     <section id="studio" aria-label="The Studio">
       {/* ─── Client logos marquee strip ─── */}
       <div className="border-y border-[#e5e7e2] bg-white">
-        <div className="mx-auto max-w-[1100px] px-5 md:px-8 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-12">
+        <div data-animate="fade-up" className="mx-auto max-w-[1100px] px-5 md:px-8 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-12">
           <span className="shrink-0 text-[10px] font-semibold tracking-widest uppercase text-[#9ca3a0] font-[Inter]">
             Engineered for teams at
           </span>
@@ -56,7 +56,7 @@ export default function StudioSection() {
       <div className="bg-white py-20 md:py-28">
         <div className="mx-auto max-w-[1100px] px-5 md:px-8">
           {/* Header */}
-          <div className="mb-10 max-w-[500px]">
+          <div data-animate="fade-up" className="mb-10 max-w-[500px]">
             <p className="mb-2 text-[11px] font-semibold tracking-widest uppercase text-[#9ca3a0] font-[Inter]">
               The Studio
             </p>
@@ -70,7 +70,7 @@ export default function StudioSection() {
           </div>
 
           {/* Team grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div data-stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {teamMembers.map((member) => (
               <TeamCard key={member.initials} member={member} />
             ))}

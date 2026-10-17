@@ -94,8 +94,8 @@ export const teamMembers = [
     focus: 'Focus: Design Systems & Strategy',
   },
   {
-    initials: 'SS',
-    name: 'Shubham Sharma',
+    initials: 'MG',
+    name: 'Mohit Godara',
     title: 'Co-founder & Full-Stack Engineer',
     description:
       'Bridges tactile client UI with resilient server-side components. Deep background in Next.js, React Native, and AI workflows.',

@@ -16,7 +16,8 @@ export default function ContactSection() {
         */}
         <div className="relative overflow-hidden rounded-3xl min-h-[420px] flex flex-col items-center justify-center text-center px-6 py-16">
           {/* Background image */}
-          <div
+            <div
+              data-animate="zoom"
             className="absolute inset-0 z-0"
             style={{
               backgroundImage: "url('/images/hero-nature.png')",
@@ -29,7 +30,7 @@ export default function ContactSection() {
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-white/40 via-white/20 to-white/50" aria-hidden="true" />
 
           {/* Content */}
-          <div className="relative z-10 flex flex-col items-center">
+          <div data-animate="fade-up" className="relative z-10 flex flex-col items-center">
             {/* Availability badge */}
             <div className="mb-6 flex items-center gap-2 rounded-full border border-[#e5e7e2] bg-white/90 px-4 py-2 shadow-sm backdrop-blur-sm">
               <span className="h-2 w-2 rounded-full bg-green-500 shrink-0" />
@@ -52,6 +53,7 @@ export default function ContactSection() {
             {/* CTA */}
             <a
               href={PROJECT_MAILTO}
+              data-motion-interactive
               className="inline-flex items-center gap-2 rounded-full bg-[#0a0a0a] px-7 py-3.5 text-[14px] font-medium font-[Inter] text-white hover:bg-[#2a2a2a] active:scale-[0.98] transition-all duration-200 mb-7"
             >
               Start a project
