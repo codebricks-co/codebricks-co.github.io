@@ -34,7 +34,7 @@ export default function StudioSection() {
   return (
     <section id="studio" aria-label="The Studio">
       {/* ─── Client logos marquee strip ─── */}
-      <div className="border-y border-[#e5e7e2] bg-white">
+      {/* <div className="border-y border-[#e5e7e2] bg-white">
         <div data-animate="fade-up" className="mx-auto max-w-[1100px] px-5 md:px-8 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-12">
           <span className="shrink-0 text-[10px] font-semibold tracking-widest uppercase text-[#9ca3a0] font-[Inter]">
             Engineered for teams at
@@ -50,7 +50,7 @@ export default function StudioSection() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* ─── Team section ─── */}
       <div className="bg-white py-20 md:py-28">
