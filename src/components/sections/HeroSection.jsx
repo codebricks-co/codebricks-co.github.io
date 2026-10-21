@@ -10,10 +10,10 @@ function HeroDashboardCard() {
       <div className="flex items-center justify-between border-b border-[#f2f3f0] px-4 py-3">
         <div className="flex items-center gap-2">
           <span className="flex h-6 w-6 items-center justify-center rounded-md bg-[#f2f3f0] text-[10px] font-bold font-[Inter] text-[#0a0a0a]">
-            W
+            C
           </span>
           <span className="text-[12px] font-medium font-[Inter] text-[#3a3d3a]">
-            World of Diversity / Space
+            Project details
           </span>
         </div>
         <span className="flex items-center gap-1.5 rounded-full bg-[#f2f3f0] px-2.5 py-1 text-[11px] font-medium font-[Inter] text-[#3a3d3a]">
@@ -28,9 +28,9 @@ function HeroDashboardCard() {
         <div className="flex-1 border-r border-[#f2f3f0] p-4 space-y-4">
           <div className="grid grid-cols-3 gap-3">
             {[
-              { label: 'New leads', value: '12' },
-              { label: 'In chat now', value: '10' },
-              { label: 'Resolved', value: '1' },
+              { label: 'Projects Deliver', value: '10+' },
+              { label: 'Ongoing', value: '1' },
+              { label: 'Team size', value: '3' },
             ].map((s) => (
               <div key={s.label}>
                 <p className="text-[10px] text-[#9ca3a0] font-[Inter]">{s.label}</p>
@@ -41,8 +41,8 @@ function HeroDashboardCard() {
             ))}
           </div>
           <div className="pt-2 border-t border-[#f2f3f0]">
-            <p className="text-[10px] text-[#9ca3a0] font-[Inter]">Monthly Throughput</p>
-            <p className="text-[16px] font-semibold font-[Inter] text-[#0a0a0a]">$23,251</p>
+            <p className="text-[10px] text-[#9ca3a0] font-[Inter]">Hourly Rate</p>
+            <p className="text-[16px] font-semibold font-[Inter] text-[#0a0a0a]">$35</p>
           </div>
         </div>
 
@@ -58,11 +58,11 @@ function HeroDashboardCard() {
                   <span className="text-[12px] font-semibold font-[Inter] text-[#0a0a0a]">Marcus</span>
                   <span className="text-[10px] text-[#9ca3a0] font-[Inter]">#SH-24819</span>
                 </div>
-                <p className="text-[10px] text-[#9ca3a0] font-[Inter]">Automated resolution flow</p>
+               
               </div>
             </div>
             <span className="shrink-0 rounded-md bg-[#f2f3f0] px-2 py-0.5 text-[10px] font-medium font-[Inter] text-[#3a3d3a]">
-              Order Lookup
+              Project Lookup
             </span>
           </div>
 

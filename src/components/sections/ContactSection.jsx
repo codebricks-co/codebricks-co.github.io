@@ -32,12 +32,12 @@ export default function ContactSection() {
           {/* Content */}
           <div data-animate="fade-up" className="relative z-10 flex flex-col items-center">
             {/* Availability badge */}
-            <div className="mb-6 flex items-center gap-2 rounded-full border border-[#e5e7e2] bg-white/90 px-4 py-2 shadow-sm backdrop-blur-sm">
+            {/* <div className="mb-6 flex items-center gap-2 rounded-full border border-[#e5e7e2] bg-white/90 px-4 py-2 shadow-sm backdrop-blur-sm">
               <span className="h-2 w-2 rounded-full bg-green-500 shrink-0" />
               <span className="text-[13px] font-medium font-[Inter] text-[#3a3d3a]">
                 Q3 Availability: 1 of 3 Client Slots Open
               </span>
-            </div>
+            </div> */}
 
             {/* Heading */}
             <h2 className="font-serif text-[44px] sm:text-[52px] md:text-[58px] font-normal text-[#0a0a0a] leading-tight mb-4 max-w-[500px]">
